@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1150.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.studentattendancemanagementsystem.adminController">
+   <left>
+      <AnchorPane fx:id="adminlPanel" prefHeight="700.0" prefWidth="250.0" style="-fx-background-color: #1e90ff;" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="adminTxt" layoutX="18.0" layoutY="121.0" prefHeight="46.0" prefWidth="210.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></TextField>
+            <Label fx:id="adinfLbl" layoutX="14.0" layoutY="221.0" prefHeight="32.0" prefWidth="98.0" text="Features" textFill="#861530">
+               <font>
+                  <Font name="System Bold" size="22.0" />
+               </font>
+            </Label>
+            <Button fx:id="acmBtn" layoutX="21.0" layoutY="288.0" mnemonicParsing="false" onAction="#acmBtnOnAction" prefHeight="26.0" prefWidth="166.0" style="-fx-background-color: white;" text="1. Course Management" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="asmBtn" layoutX="20.0" layoutY="350.0" mnemonicParsing="false" onAction="#asmBtnOnAction" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: white;" text="2. Student Management">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="almBtn" layoutX="20.0" layoutY="413.0" mnemonicParsing="false" onAction="#almBtnOnAction" prefHeight="26.0" prefWidth="168.0" style="-fx-background-color: white;" text="3. Lecturer Management">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="aamBtn" layoutX="19.0" layoutY="476.0" mnemonicParsing="false" onAction="#aamBtnOnAction" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: white;" text="4. Attendance Marking">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Button fx:id="aarBtn" layoutX="18.0" layoutY="539.0" mnemonicParsing="false" onAction="#aarBtnOnAction" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: white;" text="5. Attendance Report">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
+            <Label fx:id="adminLbl" layoutX="42.0" layoutY="20.0" text="ADMIN" textFill="#070a63">
+               <font>
+                  <Font name="System Bold" size="35.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane fx:id="adminrPanel" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #4bcffa;" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

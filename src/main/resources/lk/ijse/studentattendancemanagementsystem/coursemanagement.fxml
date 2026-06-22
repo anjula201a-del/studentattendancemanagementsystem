@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="cmPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #fffa65;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"fx:controller="lk.ijse.studentattendancemanagementsystem.controller.CoursemanagementController">
+   <children>
+      <Label fx:id="cmLbl" layoutX="257.0" layoutY="14.0" prefHeight="50.0" prefWidth="402.0" text="COURSE MANAGEMENT" textFill="#e70909">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="cmcourseidLbl" layoutX="34.0" layoutY="115.0" prefHeight="22.0" prefWidth="88.0" text="Course Id">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cmnameLbl" layoutX="175.0" layoutY="115.0" prefHeight="22.0" prefWidth="98.0" text="Course Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cmdurationLbl" layoutX="314.0" layoutY="115.0" prefHeight="18.0" prefWidth="74.0" text="Duration">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cmfeeLbl" layoutX="449.0" layoutY="115.0" prefHeight="18.0" prefWidth="88.0" text="Course Fee">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cmsubidLbl" layoutX="585.0" layoutY="115.0" prefHeight="18.0" prefWidth="88.0" text="Subject ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="cmsubnameLbl" layoutX="721.0" layoutY="115.0" prefHeight="18.0" prefWidth="98.0" text="Subject Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="cmdurationTxt" layoutX="314.0" layoutY="139.0" prefHeight="34.0" prefWidth="119.0" />
+      <TextField fx:id="cmsubidTxt" layoutX="585.0" layoutY="139.0" prefHeight="34.0" prefWidth="119.0" />
+      <TextField fx:id="cmsubnameTxt" layoutX="721.0" layoutY="139.0" prefHeight="34.0" prefWidth="119.0" />
+      <TextField fx:id="cmfeeTxt" layoutX="448.0" layoutY="139.0" prefHeight="34.0" prefWidth="119.0" />
+      <TextField fx:id="cmstudentidTxt" layoutX="34.0" layoutY="139.0" prefHeight="34.0" prefWidth="119.0" />
+      <TextField fx:id="cmnameTxt" layoutX="175.0" layoutY="139.0" prefHeight="34.0" prefWidth="119.0" />
+      <Button fx:id="cmaddBtn" layoutX="34.0" layoutY="204.0" mnemonicParsing="false" onAction="#cmaddBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Add">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cmeditBtn" layoutX="243.0" layoutY="204.0" mnemonicParsing="false" onAction="#cmeditBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Edit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cmdeleteBtn" layoutX="448.0" layoutY="204.0" mnemonicParsing="false" onAction="#cmdeleteBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="cmresetBtn" layoutX="659.0" layoutY="204.0" mnemonicParsing="false" onAction="#cmresetBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Reset">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TableView fx:id="cmTbl" layoutX="38.0" layoutY="297.0" prefHeight="387.0" prefWidth="817.0">
+        <columns>
+            <TableColumn fx:id="cmcourseidCol" prefWidth="133.59996795654297" text="Course ID" />
+            <TableColumn fx:id="cmnameCol" minWidth="4.79998779296875" prefWidth="138.4000244140625" text="Course Name" />
+            <TableColumn fx:id="cmdurationCol" prefWidth="136.79998779296875" text="Duration" />
+            <TableColumn fx:id="cmfeeCol" prefWidth="115.20004272460938" text="Fee" />
+            <TableColumn fx:id="cmsubidCol" prefWidth="132.800048828125" text="Subject ID" />
+            <TableColumn fx:id="cmsubnameCol" prefWidth="137.5999755859375" text="Subject Name" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

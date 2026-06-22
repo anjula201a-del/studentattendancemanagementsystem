@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="amPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #01a3a4;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.studentattendancemanagementsystem.controller.AttendancemanagementController">
+   <children>
+      <Label fx:id="amLbl" layoutX="202.0" layoutY="31.0" prefHeight="50.0" prefWidth="526.0" text="ATTENDANCE MANAGEMENT" textFill="#e70909">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="amclassidLbl" layoutX="90.0" layoutY="158.0" prefHeight="30.0" prefWidth="94.0" text="Class ID">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="amstudentidLbl" layoutX="376.0" layoutY="158.0" prefHeight="30.0" prefWidth="130.0" text="Student ID">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="amattendanceLbl" layoutX="661.0" layoutY="158.0" prefHeight="18.0" prefWidth="118.0" text="Attendance">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="amsaveBtn" layoutX="212.0" layoutY="464.0" mnemonicParsing="false" onAction="#amsaveBtnOnAction" prefHeight="66.0" prefWidth="426.0" text="Save">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Button>
+      <TextField fx:id="amclassidTxt" layoutX="34.0" layoutY="245.0" prefHeight="40.0" prefWidth="206.0" />
+      <TextField fx:id="amstudentidTxt" layoutX="329.0" layoutY="245.0" prefHeight="40.0" prefWidth="206.0" />
+      <ChoiceBox fx:id="amattendanceTxt" layoutX="617.0" layoutY="245.0" prefHeight="40.0" prefWidth="206.0" />
+   </children>
+</AnchorPane>

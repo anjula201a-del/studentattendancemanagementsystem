@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="lmPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #78e08f;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.studentattendancemanagementsystem.controller.LecturermanagementController">
+   <children>
+      <Label fx:id="lmLbl" layoutX="244.0" layoutY="14.0" prefHeight="50.0" prefWidth="449.0" text="LECTURER MANAGEMENT" textFill="#e70909">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Label fx:id="lmlectureridLbl" layoutX="24.0" layoutY="117.0" prefHeight="22.0" prefWidth="101.0" text="Lecturer ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lmnameLbl" layoutX="187.0" layoutY="118.0" prefHeight="18.0" prefWidth="63.0" text="Name">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lmemailLbl" layoutX="351.0" layoutY="117.0" prefHeight="18.0" prefWidth="118.0" text="E-mail">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lmadressLbl" layoutX="514.0" layoutY="117.0" prefHeight="18.0" prefWidth="63.0" text="Adress">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="lmsubjectidLbl" layoutX="676.0" layoutY="117.0" prefHeight="18.0" prefWidth="74.0" text="Subject ID">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="lmaddBtn" layoutX="24.0" layoutY="193.0" mnemonicParsing="false" onAction="#lmaddBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Add">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="lmeditBtn" layoutX="232.0" layoutY="193.0" mnemonicParsing="false" onAction="#lmeditBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Edit">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="lmdeleteBtn" layoutX="443.0" layoutY="193.0" mnemonicParsing="false" onAction="#lmdeleteBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Delete">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="lmresetBtn" layoutX="658.0" layoutY="193.0" mnemonicParsing="false" onAction="#lmresetBtnOnAction" prefHeight="39.0" prefWidth="178.0" text="Reset">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <TextField fx:id="lmlectureridTxt" layoutX="24.0" layoutY="145.0" prefHeight="26.0" prefWidth="142.0" />
+      <TextField fx:id="lmemailTxt" layoutX="351.0" layoutY="145.0" prefHeight="26.0" prefWidth="142.0" />
+      <TextField fx:id="lmadressTxt" layoutX="514.0" layoutY="145.0" prefHeight="26.0" prefWidth="142.0" />
+      <TextField fx:id="lmnameTXt" layoutX="187.0" layoutY="145.0" prefHeight="26.0" prefWidth="142.0" />
+      <TextField fx:id="lmsubjectidTxt" layoutX="676.0" layoutY="145.0" prefHeight="26.0" prefWidth="142.0" />
+      <TableView fx:id="lmTbl" layoutX="24.0" layoutY="283.0" prefHeight="376.0" prefWidth="856.0">
+         <columns>
+            <TableColumn fx:id="lmlectureridCol" prefWidth="174.39998817443848" text="Lecturer ID" />
+            <TableColumn fx:id="lmnameCol" minWidth="4.79998779296875" prefWidth="154.4000244140625" text=" Name" />
+            <TableColumn fx:id="lmemailCol" prefWidth="174.39999389648438" text="E-mail" />
+            <TableColumn fx:id="lmadressCol" prefWidth="161.5999755859375" text="Adress" />
+            <TableColumn fx:id="lmsubjectidCol" prefWidth="192.7999267578125" text="Subject ID" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
