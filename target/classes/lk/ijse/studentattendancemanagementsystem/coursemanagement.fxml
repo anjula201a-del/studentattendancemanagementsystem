@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="cmPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #fffa65;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1"fx:controller="lk.ijse.studentattendancemanagementsystem.controller.CoursemanagementController">
+<AnchorPane fx:id="cmPanel" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #fffa65;" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.studentattendancemanagementsystem.controller.CoursemanagementController">
    <children>
       <Label fx:id="cmLbl" layoutX="257.0" layoutY="14.0" prefHeight="50.0" prefWidth="402.0" text="COURSE MANAGEMENT" textFill="#e70909">
          <font>

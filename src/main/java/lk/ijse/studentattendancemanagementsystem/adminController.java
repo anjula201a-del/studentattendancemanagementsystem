@@ -93,7 +93,7 @@ public class adminController {
 
     @FXML
     void acmBtnOnAction(ActionEvent event) {
-    adminTxt.setText("Course Management");
+    adminTxt.setText("Course management");
 
         try {
             Parent subView = FXMLLoader.load(getClass().getResource("/lk/ijse/studentattendancemanagementsystem/coursemanagement.fxml"));
@@ -113,7 +113,27 @@ public class adminController {
         }
     }
         
-        
+     @FXML
+    void acsBtnOnAction(ActionEvent event) {
+      adminTxt.setText("Class Scheduling");
+
+        try {
+            Parent subView = FXMLLoader.load(getClass().getResource("/lk/ijse/studentattendancemanagementsystem/classsheduling.fxml"));
+          
+            adminrPanel.getChildren().clear();
+           
+            adminrPanel.getChildren().add(subView);
+            
+        } catch (IOException e) {
+            e.printStackTrace();
+            
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Navigation Error");
+            alert.setHeaderText(null);
+            alert.setContentText("Could not find or load classsheduling.fxml!");
+            alert.showAndWait();
+        }  
+    }    
         
         
         

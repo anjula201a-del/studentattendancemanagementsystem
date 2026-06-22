@@ -35,12 +35,12 @@
                   <Font name="System Bold" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="aamBtn" layoutX="19.0" layoutY="476.0" mnemonicParsing="false" onAction="#aamBtnOnAction" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: white;" text="4. Attendance Marking">
+            <Button fx:id="aamBtn" layoutX="18.0" layoutY="541.0" mnemonicParsing="false" onAction="#aamBtnOnAction" prefHeight="26.0" prefWidth="170.0" style="-fx-background-color: white;" text="4. Attendance Marking">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
             </Button>
-            <Button fx:id="aarBtn" layoutX="18.0" layoutY="539.0" mnemonicParsing="false" onAction="#aarBtnOnAction" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: white;" text="5. Attendance Report">
+            <Button fx:id="aarBtn" layoutX="18.0" layoutY="601.0" mnemonicParsing="false" onAction="#aarBtnOnAction" prefHeight="26.0" prefWidth="171.0" style="-fx-background-color: white;" text="5. Attendance Report">
                <font>
                   <Font name="System Bold" size="13.0" />
                </font>
@@ -50,6 +50,11 @@
                   <Font name="System Bold" size="35.0" />
                </font>
             </Label>
+            <Button fx:id="acsBtn" layoutX="21.0" layoutY="475.0" mnemonicParsing="false" onAction="#acsBtnOnAction" prefHeight="30.0" prefWidth="166.0" style="-fx-background-color: white;" text="4. Class Scheduling">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Button>
          </children>
       </AnchorPane>
    </left>
