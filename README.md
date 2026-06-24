@@ -1,5 +1,5 @@
 # Student Attendance Management System
-> [cite_start]**Architecture:** Layered Architecture ![Login Window Screenshot](assets/login.png)
+> **Architecture:** Layered Architecture ![Login Window Screenshot](assets/login.png)
 
 [cite_start]This is a Java-based desktop application that facilitates the tracking and reporting of student attendance for educational institutions[cite: 3].
 
@@ -13,6 +13,7 @@
 | :--- | :--- | :--- |
 | [cite_start]**Administrative Staff** [cite: 5] | [cite_start]`admin` [cite: 10] | [cite_start]`Admin123` [cite: 10] |
 | [cite_start]**Lecturer** [cite: 5] | [cite_start]`lecturer` [cite: 10] | [cite_start]`Lec123` [cite: 10] |
+![Security Window Screenshot](assets/security.png)
 
 ---
 
