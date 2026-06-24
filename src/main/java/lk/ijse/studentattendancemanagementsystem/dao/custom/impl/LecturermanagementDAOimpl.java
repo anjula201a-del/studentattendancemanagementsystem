@@ -18,7 +18,7 @@ import lk.ijse.studentattendancemanagementsystem.entity.LecturermanagementEntity
 public class LecturermanagementDAOimpl implements LecturermanagementDAO{
      @Override
     public boolean add(LecturermanagementEntity entity) throws Exception {
-        // Insert into lecturer table first
+      
         boolean lecturerSaved = CrudUtil.executeUpdate(
             "INSERT INTO lecturer(lecturer_id, name, email, address) VALUES (?,?,?,?)",
             entity.getId(),
@@ -26,7 +26,7 @@ public class LecturermanagementDAOimpl implements LecturermanagementDAO{
             entity.getEmail(),
             entity.getAddress()
         );
-        // Then insert subject assignment into lecturer_subject table
+      
         if (lecturerSaved && entity.getSubjectId() != null && !entity.getSubjectId().isEmpty()) {
             return CrudUtil.executeUpdate(
                 "INSERT INTO lecturer_subject(lecturer_id, subject_id) VALUES (?,?)",
@@ -46,7 +46,7 @@ public class LecturermanagementDAOimpl implements LecturermanagementDAO{
             entity.getAddress(),
             entity.getId()
         );
-        // Update lecturer_subject: delete old, insert new
+        
         if (lecturerUpdated && entity.getSubjectId() != null && !entity.getSubjectId().isEmpty()) {
             CrudUtil.executeUpdate("DELETE FROM lecturer_subject WHERE lecturer_id=?", entity.getId());
             return CrudUtil.executeUpdate(

@@ -16,7 +16,7 @@ import lk.ijse.studentattendancemanagementsystem.entity.AttendanceEntity;
 public class AttendanceDAOimpl implements AttendanceDAO {
     @Override
     public boolean save(AttendanceEntity entity) throws Exception {
-        // INSERT or UPDATE if already exists (UPSERT)
+       
         return CrudUtil.executeUpdate(
             "INSERT INTO attendance(class_id, student_id, attendance) VALUES (?,?,?) " +
             "ON DUPLICATE KEY UPDATE attendance=VALUES(attendance)",
